@@ -74,5 +74,6 @@ def main():
     except UnidentifiedImageError:
         print('Could not fetch image. Try adjusting the parameters.')
 
+
 if __name__ == '__main__':
     main()
