@@ -1,7 +1,7 @@
 # What does it do?
 Given a location and a date, it uses the Nasa Earth API to show a photo taken by the Landsat 8 satellite. The script must be executed on the command-line.
 
-# Set up
+# Setup
 Before using the script, you must have access to the Nasa's API key. You can quickly get a key at https://api.nasa.gov/.
 After that, save your key as an environment variable called NASA_API_KEY. Then, you are good to go.
 
