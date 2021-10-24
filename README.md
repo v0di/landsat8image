@@ -3,7 +3,7 @@ Given a location and a date, it uses the Nasa Earth API to show a photo taken by
 
 # Set up
 Before using the script, you must have access to the Nasa's API key. You can quickly get a key in https://api.nasa.gov/.
-After that, save your key as an environment variable. Then, you are good to go.
+After that, save your key as an environment variable called NASA_API_KEY. Then, you are good to go.
 
 # How to use
 <p>In the same directory where the script is saved, run the following code on the command-line:</p> 
