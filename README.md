@@ -11,9 +11,14 @@ After that, save your key as an environment variable called NASA_API_KEY. Then, 
 <p>-DATE, -DIM and --info are optional. -DATE defaults to today. -DIM defaults to 0.15.</p>
 <p>If --info is provided, then the latitude and longitude you input are written onto the image.</p>
 
-# Example
+# Examples
 <h2>By running the following line</h2>
 <img src="examples/example1.jpg">
 <div></div>
 <h2>you get this image</h2>
 <img src="examples/img1.jpg">
+<h2>By running the following line</h2>
+<img src="examples/example2.jpg">
+<div></div>
+<h2>you get this image</h2>
+<img src="examples/img2.jpg">
