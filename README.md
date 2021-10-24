@@ -11,6 +11,9 @@ After that, save your key as an environment variable called NASA_API_KEY. Then, 
 <p>-DATE, -DIM and --info are optional. -DATE defaults to today. -DIM defaults to 0.15.</p>
 <p>If --info is provided, then the latitude and longitude you input are written onto the image.</p>
 
+# Note
+If the image can not be retrieved, chances are the coordinates are in the ocean. Ocean images do not seem to be kept saved in the Landsat 8's database.
+
 # Examples
 <h2>By running the following line</h2>
 <img src="examples/example1.jpg">
