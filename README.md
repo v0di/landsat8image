@@ -7,8 +7,8 @@ After that, save your key as an environment variable called NASA_API_KEY. Then, 
 
 # How to use
 <p>In the same directory where the script is saved, run the following code on the command-line:</p> 
-<h3>get_image.py -LAT [latitude] -LON [longitude] -DATE [date] --info</h3>
-<p>-DATE and --info are optional. -DATE defaults to today.</p>
+<h3>get_image.py -LAT [latitude] -LON [longitude] -DATE [date] -DIM [dim] --info</h3>
+<p>-DATE, -DIM and --info are optional. -DATE defaults to today. -DIM defaults to 0.15.</p>
 <p>If --info is provided, then the latitude and longitude you input are written onto the image.</p>
 
 # Example
