@@ -1,7 +1,7 @@
 import argparse
 from datetime import datetime
 from PIL import Image, ImageDraw, ImageFont, UnidentifiedImageError
-from os import environ
+import os
 import requests
 
 
@@ -27,7 +27,7 @@ def image(
         'lon':lon,
         'date':date,
         'dim':dim,
-        'api_key':environ['NASA_API_KEY'],
+        'api_key':os.environ['NASA_API_KEY'],
     }
     response = requests.get(
         'https://api.nasa.gov/planetary/earth/imagery', 
