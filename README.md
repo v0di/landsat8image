@@ -14,7 +14,7 @@ After that, save your key as an environment variable called NASA_API_KEY. Then, 
 <p>*You can also add the script path to PATH and run it from anywhere.</p>
 
 # Note
-If the image can not be retrieved, chances are the coordinates are in the ocean. Ocean images do not seem to be kept saved in the Landsat 8's database.
+If the image can not be retrieved, chances are the coordinates are in the ocean. The Landsat 8 sattelite do not capture ocean images.
 
 # Examples
 <h2>By running the following line</h2>
