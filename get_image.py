@@ -14,7 +14,7 @@ def image(
             lat: latitude (float)
             lon: longitude (float)
             date: date in the yyyy-mm-dd format. Defaults to most recent date (str)
-            dim: dimension of the image. Defaults to 0.15 (float)
+            dim: width and height of image in degrees. Defaults to 0.15 (float)
             info: write onto the image the latitude and the longitude. Defaults to False (bool)
     Returns:
             An Image.Image object
@@ -59,7 +59,8 @@ def main():
         '--date', '-DATE', nargs='?', type=str, help='Date in yyyy-mm-dd format. Defaults to today'
         )
     parser.add_argument(
-        '--dim', '-DIM', nargs='?', default=0.15, type=float, help='Image dimension. Defaults to 0.15'
+        '--dim', '-DIM', nargs='?', default=0.15, type=float, 
+        help='Width and height of image in degrees. Defaults to 0.15',
         )
     parser.add_argument(
         '--info', '-INFO', action='store_true', help='Writes lat and lon information onto the image'
