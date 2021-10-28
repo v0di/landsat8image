@@ -1,3 +1,4 @@
+<a href="https://github.com/v0di/landsat8image/blob/main/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/v0di/landsat8image"></a>
 ![GitHub last commit](https://img.shields.io/github/last-commit/v0di/landsat8image)
 ![GitHub file size in bytes](https://img.shields.io/github/size/v0di/landsat8image/get_image.py)
 ![GitHub contributors](https://img.shields.io/github/contributors/v0di/landsat8image)
