@@ -7,8 +7,8 @@ import requests
 
 def image(
     lat: float, lon: float, date: str = None, 
-    dim: float = 0.15, info: bool = False
-    ) -> Image.Image:
+    dim: float = 0.15, info: bool = False,
+    api_key: str = None) -> Image.Image:
     """
     Parameters:
             lat: latitude (float)
@@ -16,6 +16,7 @@ def image(
             date: date in the yyyy-mm-dd format. Defaults to most recent date (str)
             dim: width and height of image in degrees. Defaults to 0.15 (float)
             info: write onto the image the latitude and the longitude. Defaults to False (bool)
+            api_key: your NASA API key (str)
     Returns:
             An Image.Image object
     """
@@ -27,7 +28,7 @@ def image(
         'lon':lon,
         'date':date,
         'dim':dim,
-        'api_key':os.environ['NASA_API_KEY'],
+        'api_key':api_key,
     }
     response = requests.get(
         'https://api.nasa.gov/planetary/earth/imagery', 
@@ -69,7 +70,8 @@ def main():
     # -------------------- End of Command-Line Arguments Parsing -------------------- #
     try:
         img = image(
-            args.lat, args.lon, args.date, args.dim, args.info
+            args.lat, args.lon, args.date, 
+            args.dim, args.info, os.environ['NASA_API_KEY']
         )
         img.show()
     except UnidentifiedImageError:
