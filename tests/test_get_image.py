@@ -13,7 +13,7 @@ class GetImageTest(unittest.TestCase):
             dim=0.15, api_key='DEMO_KEY'
         )
         self.image_test = Image.open(
-            os.path.join('test_images', 'testimage1.png')
+            os.path.join('tests', 'images_test', 'testimage1.png')
         )
         self.assertEqual(
             list(self.image.getdata()), list(self.image_test.getdata())
