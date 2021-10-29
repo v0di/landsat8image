@@ -1,6 +1,6 @@
 <a href="https://github.com/v0di/landsat8image/blob/main/LICENSE"><img alt="GitHub" src="https://img.shields.io/github/license/v0di/landsat8image"></a>
 ![GitHub last commit](https://img.shields.io/github/last-commit/v0di/landsat8image)
-![GitHub file size in bytes](https://img.shields.io/github/size/v0di/landsat8image/get_image.py)
+<a href="https://github.com/v0di/landsat8image/blob/main/src/get_image.py"><img alt="GitHub file size in bytes" src="https://img.shields.io/github/size/v0di/landsat8image/src/get_image.py"></a>
 ![GitHub contributors](https://img.shields.io/github/contributors/v0di/landsat8image)
 # What does it do?
 Given a location and a date, it uses the Nasa Earth API to show a photo taken by the Landsat 8 satellite. The script must be executed on the command-line.
