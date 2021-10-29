@@ -66,6 +66,9 @@ def main():
     parser.add_argument(
         '--info', '-INFO', action='store_true', help='Writes lat and lon information onto the image'
         )
+    parser.add_argument(
+        '--save', '-SAVE', nargs='?', const='', help='Saves the image.'
+        )
     args = parser.parse_args()
     # -------------------- End of Command-Line Arguments Parsing -------------------- #
     try:
@@ -73,6 +76,14 @@ def main():
             args.lat, args.lon, args.date, 
             args.dim, args.info, os.environ['NASA_API_KEY']
         )
+        if args.save:
+            try:
+                img.save(args.save)
+                print('Image saved successfully!')
+            except ValueError:
+                print('[ERROR] Unknown file extension. Image not saved!')
+            except FileNotFoundError:
+                print('[ERROR] Directory not found. Image not saved!')
         img.show()
     except UnidentifiedImageError:
         print('Could not fetch image. Try adjusting the parameters.')
